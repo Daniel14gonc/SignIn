@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "56204393755",
+    "project_id": "fir-uvg-ede2b",
+    "storage_bucket": "fir-uvg-ede2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56204393755:android:30a8f86aefa0ede79ca7be",
+        "android_client_info": {
+          "package_name": "com.uvg.signin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56204393755-le5krbuoeho2tddnvlcscoruoobshrkk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uvg.signin",
+            "certificate_hash": "a252f40a5182b8bfdd20907da62b659b616852da"
+          }
+        },
+        {
+          "client_id": "56204393755-dgn7tmenrilfr8sk7atv5o7h0pbceu50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClmixbKqYlmw5KorCkoL8y6l-Bo5rZIPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56204393755-dgn7tmenrilfr8sk7atv5o7h0pbceu50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
