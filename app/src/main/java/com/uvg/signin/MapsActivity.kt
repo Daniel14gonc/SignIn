@@ -110,7 +110,17 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         override fun onLocationResult(p0: LocationResult) {
             super.onLocationResult(p0)
             var lastLocation: Location = p0.lastLocation
-            location = lastLocation
+            val userLocation = LatLng(lastLocation.latitude, lastLocation.longitude)
+            mMap.addMarker(MarkerOptions().position(userLocation).title("Tu ubicación"))
+            //mMap.moveCamera(CameraUpdateFactory.newLatLng(userLocation))
+
+            val cameraPosition = CameraPosition.Builder()
+                    .target(userLocation) // Sets the center of the map to Mountain View
+                    .zoom(17f)            // Sets the zoom
+                    .bearing(90f)         // Sets the orientation of the camera to east
+                    .tilt(30f)            // Sets the tilt of the camera to 30 degrees
+                    .build()              // Creates a CameraPosition from the builder
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
         }
     }
 
